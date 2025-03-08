@@ -1,4 +1,5 @@
 import './assets/main.css'
+import '@heartlandone/vega/style/vega.css';
 
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -9,5 +10,3 @@ VegaComponentLibrary.isReady().then( ()=>
 {
     app.mount("#app");
 });
-
-//createApp(App).mount('#app')
