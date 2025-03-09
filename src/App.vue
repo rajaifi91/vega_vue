@@ -11,13 +11,18 @@ import AppVegaComponent from './components/AppVegaComponent.vue';
     <div class="wrapper">
       <HelloWorld msg="You did it!"/>
     </div>
-  </header>
+  </header> 
   
-  <main>
-    <!--<TheWelcome />-->
-    <AppVegaComponent/>
-  </main>
-
+ <main>
+  <!--   <TheWelcome />-->
+  <AppVegaComponent/>
+  <div id="app">
+    <router-view />
+  </div>
+    
+  </main> 
+  
+  
 </template>
 
 <style scoped>
@@ -46,5 +51,8 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+  #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
 }
 </style>
