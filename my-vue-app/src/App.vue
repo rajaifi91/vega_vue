@@ -1,18 +1,27 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
+// @ts-ignore
+import AppForm from './components/AppForm.vue';
+// @ts-ignore
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div id="app">
+  <AppHeader/>
+  <!--<div id="app">
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/contact">Contact</RouterLink>
     </nav>
-    <RouterView />
   </div>
-
-  <HelloWorld msg="Vite + Vue" />
+  -->
+  <RouterView />
+  <AppForm/>
+ <!-- <HelloWorld msg="Vite + Vue" />-->
+  <AppFooter/>
 </template>
 
 <style scoped>
