@@ -33,6 +33,18 @@
           prefix-icon="email"
         ></VegaInput>
         <VegaInput
+          data-vega-form="Password"
+          label="Password"
+          required="true"
+          type="password"
+        ></VegaInput>
+        <VegaInput
+          data-vega-form="Re-type Password"
+          label="Re-type Password"
+          required="true"
+          type="password"
+        ></VegaInput>
+        <VegaInput
           data-vega-form="Phone"
           required="true"
           label="Phone"
@@ -40,92 +52,15 @@
           placeholder="(999) 999-9999"
           prefix-icon="mobile-phone"
     ></VegaInput>
-        <!--<VegaInputSelect
-          data-vega-form="state"
-          :source="state"
-          label="Input Select"
-        ></VegaInputSelect>
-        <VegaDatePicker
-          mode="range"
-          data-vega-form="workingPeriod"
-          label="Working Period: "
-        ></VegaDatePicker>
-        <VegaRadioGroup
-          data-vega-form="title"
-          label="Title"
-          :vega-flex-prop="{
-            gap: 'size-8',
-            direction: 'row',
-          }"
-        >
-          <VegaRadio value="eng">Engineer</VegaRadio>
-          <VegaRadio value="mark">Marketing Sales</VegaRadio>
-          <VegaRadio value="sup">Support</VegaRadio>
-        </VegaRadioGroup>
-  
-        <VegaCheckboxGroup
-          data-vega-form="workOffice"
-          label="Work Office"
-          :vega-flex-prop="{ gap: 'size-8' }"
-        >
-          <VegaCheckbox identifier="seattle">Seattle</VegaCheckbox>
-          <VegaCheckbox identifier="bay_area">Bay Area</VegaCheckbox>
-        </VegaCheckboxGroup>
-  
-        <VegaComboBox
-          data-vega-form="departments"
-          :source="departments"
-          label="Departments"
-        ></VegaComboBox>
-  
-        <div>
-          <VegaStepper
-            data-vega-form="workYears"
-            label="Work Years"
-          ></VegaStepper>
-        </div>
-  
-        <VegaColorPicker
-          data-vega-form="color"
-          label="Favorite Color"
-        ></VegaColorPicker>
-  
-        <VegaTimePicker
-          data-vega-form="meetingTime"
-          label="Meeting Time"
-        ></VegaTimePicker>
-  
-        <VegaImageUploader
-          data-vega-form="avatar"
-          label="Avatar"
-        ></VegaImageUploader>-->
-  
-        <VegaTextarea
-          required="true"
-          data-vega-form="note"
-          label="Message"
-        ></VegaTextarea>
-      </VegaFlex>
-      <!--
-      <VegaFlex
-        gap="size-16"
-        margin="size-16"
-        direction="col"
-      >
-        <VegaFont>Form valid: {{ isValid ? "true" : "false" }}</VegaFont>
-        <VegaFont>Form Values: {{ JSON.stringify(formData, null, 2) }}</VegaFont>
-      </VegaFlex>
-      -->
+    </VegaFlex>
 
       <VegaFlex
         direction="row"
         gap="size-8"
         justify-content="center"
       >
-        <!--<VegaButton @vegaClick="getValue">Log Form Value</VegaButton>
-        <VegaButton @vegaClick="validate">Validate Form</VegaButton>-->
         <VegaButton variant="secondary" @vegaClick="reset">Reset</VegaButton>
-        <VegaButton variant="secondary" @vegaClick="SubmitData">Submit</VegaButton>
+        <VegaButton variant="secondary" @vegaClick="SubmitData">Register</VegaButton>
       </VegaFlex>
     </VegaForm>
     </div>
@@ -215,5 +150,3 @@ import {
     },
   };
   </script>
-  
-    

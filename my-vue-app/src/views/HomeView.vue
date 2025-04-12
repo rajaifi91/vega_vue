@@ -48,6 +48,45 @@
     </VegaGrid>
   </VegaBox>
 
+  <VegaBox>
+    <VegaGrid
+      :column="{ S: 1, M: 2, L: 3 }"
+      gap="size-16"
+    >
+      <VegaCard
+        background-color="bg-action-secondary-hover"
+        padding="size-16"
+      >
+        <VegaSectionTitle
+          title="Learn our quality standards"
+          icon="fa-duotone fa-circle-1"
+          description="Make sure your experience meets our bar for expertise, insider access, and connection."
+        ></VegaSectionTitle>
+      </VegaCard>
+      <VegaCard
+        background-color="bg-action-secondary-hover"
+        padding="size-16"
+      >
+        <VegaSectionTitle
+          title="Create an experience page"
+          icon="fa-duotone fa-circle-2"
+          description="Your page is how people find you. Make a great first impression by highlighting your expertise and adding high quality photos."
+        ></VegaSectionTitle>
+      </VegaCard>
+      <VegaCard
+        background-color="bg-action-secondary-hover"
+        padding="size-16"
+      >
+        <VegaSectionTitle
+          title="Start hosting your experience"
+          icon="fa-duotone fa-circle-3"
+          description="As long as your experience meets the standards, you're ready to add dates and start hosting."
+        ></VegaSectionTitle>
+      </VegaCard>
+    </VegaGrid>
+  </VegaBox>
+
+
   <VegaLoadingIndicator
     mode="determinate"
     shape="bar"

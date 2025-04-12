@@ -6,7 +6,12 @@
     />
   </template>
   <script>
-  import { VegaBreadcrumb, VegaFlex } from "@heartlandone/vega-vue";
+import { VegaBreadcrumb, VegaFlex } from "@heartlandone/vega-vue";
+import HomeView from "../views/HomeView.vue";
+import AppForm from "./AppForm.vue";
+import AppForm1 from "./AppForm1.vue";
+import AppForm2 from "./AppForm2.vue";
+import { RouterLink } from "vue-router";
   export default {
     data() {
       return {
@@ -21,7 +26,15 @@
           },
           {
             label: "Contact",
-            href: "/AppForm.vue",
+            href: "./AppForm.vue",
+          },
+          {
+            label: "Login",
+            href: "./AppForm1.vue",
+          },
+          {
+            label: "Register",
+            href: "./AppForm2.vue",
           },
           {
             label: "Services",
