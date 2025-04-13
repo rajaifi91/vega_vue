@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h3>Login Form </h3>
     <VegaForm
       data-vega-form="profileForm"
       ref="profileForm"

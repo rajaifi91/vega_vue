@@ -125,7 +125,7 @@
         <!--<VegaButton @vegaClick="getValue">Log Form Value</VegaButton>
         <VegaButton @vegaClick="validate">Validate Form</VegaButton>-->
         <VegaButton variant="secondary" @vegaClick="reset">Reset</VegaButton>
-        <VegaButton variant="secondary" @vegaClick="SubmitData">Submit</VegaButton>
+        <VegaButton variant="secondary" label="Submit" @vegaClick="SubmitData">Submit</VegaButton>
       </VegaFlex>
     </VegaForm>
     </div>

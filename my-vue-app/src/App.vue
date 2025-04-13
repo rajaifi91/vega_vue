@@ -40,6 +40,8 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 nav {
   margin-bottom: 20px;
+  position: relative;
+  display: flex;
 }
 nav a {
   margin-right: 10px;

@@ -18,6 +18,7 @@
       <VegaCard
         background-color="bg-action-secondary-hover"
         padding="size-16"
+        :margin="{ bottom: 'size-32' }"
       >
         <VegaSectionTitle
           title="Learn our quality standards"
@@ -28,6 +29,7 @@
       <VegaCard
         background-color="bg-action-secondary-hover"
         padding="size-16"
+        :margin="{ bottom: 'size-32' }"
       >
         <VegaSectionTitle
           title="Create an experience page"
@@ -38,6 +40,7 @@
       <VegaCard
         background-color="bg-action-secondary-hover"
         padding="size-16"
+        :margin="{ bottom: 'size-32' }"
       >
         <VegaSectionTitle
           title="Start hosting your experience"
@@ -52,7 +55,8 @@
     <VegaGrid
       :column="{ S: 1, M: 2, L: 3 }"
       gap="size-16"
-    >
+      :margin="{ bottom : 'size-32' }"    
+      >
       <VegaCard
         background-color="bg-action-secondary-hover"
         padding="size-16"
@@ -99,19 +103,13 @@
   </template>
   
   <script>
-  //import { ref } from 'vue'
-  //import HelloWorld from '../components/HelloWorld.vue'
   import { VegaSectionTitle } from '@heartlandone/vega-vue';
   import { VegaCard } from "@heartlandone/vega-vue";
   import { VegaGrid } from '@heartlandone/vega-vue';
   import { VegaBox } from '@heartlandone/vega-vue';
   import { VegaFlex } from '@heartlandone/vega-vue';
   import { VegaLoadingIndicator } from '@heartlandone/vega-vue';
-  import { VegaIcon } from '@heartlandone/vega-vue';
-  //const count = ref(0)
-  //const increment = () => {
-   // count.value++
-  //}
+  import { VegaIcon } from '@heartlandone/vega-vue'
 ;
 export default {
   data() {
