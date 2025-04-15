@@ -4,6 +4,9 @@
       :items="breadcrumbItems"
       max-items="none"
     />
+
+
+    
   </template>
   <script>
 import { VegaBreadcrumb, VegaFlex } from "@heartlandone/vega-vue";

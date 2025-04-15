@@ -210,9 +210,14 @@ import {
         this.formData = null;
       },
       SubmitData() {
-        this.$refs.profileForm.$el.valid();
-      },
+       if(this.isValid)
+        VegaNotify.open({
+        duration: 4000,
+        message: `Message Sent`,
+        type:"success"
+});
     },
+ },
   };
   </script>
   

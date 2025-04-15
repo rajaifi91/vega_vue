@@ -1,15 +1,15 @@
 <script setup lang="ts">
 //import HelloWorld from './components/HelloWorld.vue'
-import AppHeader from './components/AppHeader.vue';
+//import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
-
+import Navbar1 from './components/Navbar1.vue';
 // @ts-ignore
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <AppHeader/>
-  
+  <Navbar1/>
+
   <div id="app">
     <nav>
       <RouterLink to="/">Home</RouterLink>
@@ -40,7 +40,7 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 nav {
   margin-bottom: 20px;
-  position: relative;
+  position: fixed;
   display: flex;
 }
 nav a {

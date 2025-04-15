@@ -145,8 +145,13 @@ import {
         this.formData = null;
       },
       SubmitData() {
-        this.$refs.profileForm.$el.valid();
-      },
+       if(this.isValid)
+        VegaNotify.open({
+        duration: 4000,
+        message: `Registration Successful`,
+        type:"success"
+});
     },
+  },
   };
   </script>
