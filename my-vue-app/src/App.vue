@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <Navbar1/>
 
-  <div id="app">
+ <!-- <div id="app">
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
@@ -18,7 +18,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/login">Login</RouterLink>
       <RouterLink to="/register">Register</RouterLink>
     </nav>
-  </div>
+  </div>-->
 <RouterView />
 
 <AppFooter/>

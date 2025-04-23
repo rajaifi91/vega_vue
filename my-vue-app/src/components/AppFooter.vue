@@ -13,11 +13,11 @@
   />
 </template>
 <script>
-import { VegaAppFooter } from "@heartlandone/vega-vue";
+import { VegaAppFooter, VegaCard } from "@heartlandone/vega-vue";
 export default {
   data() {
     return {};
   },
-  components: { VegaAppFooter },
+  components: { VegaAppFooter, VegaCard },
 };
 </script>

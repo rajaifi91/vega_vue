@@ -1,5 +1,4 @@
 <template>
-
   <!-- Navigation Bar -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <ul>
@@ -7,8 +6,8 @@
       <li class="dropdown">
         <VegaSidenavLink icon="fa fa-home" url="#">Home</VegaSidenavLink>
         <div class="dropdown-content">
-          <VegaSidenavLink url="#">Home Option 1</VegaSidenavLink>
-          <VegaSidenavLink url="#">Home Option 2</VegaSidenavLink>
+          <VegaSidenavLink url="/"><RouterLink to="/">Home 1</RouterLink></VegaSidenavLink>
+          <VegaSidenavLink url="/">Home Option 2</VegaSidenavLink>
         </div>
       </li>
       <!-- Dashboard Item with Dropdown -->
@@ -32,8 +31,15 @@
       <li class="dropdown">
         <VegaSidenavLink icon="fa fa-comment-dots fa-lg" url="#">Support</VegaSidenavLink>
         <div class="dropdown-content">
-          <VegaSidenavLink url="#">Contact Us</VegaSidenavLink>
+          <VegaSidenavLink url="#"><RouterLink to="/contact">Contact us</RouterLink></VegaSidenavLink>
           <VegaSidenavLink url="#">FAQ</VegaSidenavLink>
+        </div>
+      </li>
+      <li class="dropdown">
+        <VegaSidenavLink icon="fa fa-comment-dots fa-lg" url="#">Registration</VegaSidenavLink>
+        <div class="dropdown-content">
+          <VegaSidenavLink url="#"><RouterLink to="/login">Login</RouterLink></VegaSidenavLink>
+          <VegaSidenavLink url="#"><RouterLink to="/register">Register</RouterLink></VegaSidenavLink>
         </div>
       </li>
     </ul>
