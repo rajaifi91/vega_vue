@@ -1,25 +1,17 @@
 <script setup lang="ts">
-//import HelloWorld from './components/HelloWorld.vue'
-//import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
+import DataTable from './components/DataTable.vue';
 import Navbar1 from './components/Navbar1.vue';
 // @ts-ignore
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <Navbar1/>
+<Navbar1/>
 
- <!-- <div id="app">
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/contact">Contact</RouterLink>
-      <RouterLink to="/login">Login</RouterLink>
-      <RouterLink to="/register">Register</RouterLink>
-    </nav>
-  </div>-->
 <RouterView />
+
+<DataTable/>
 
 <AppFooter/>
 
